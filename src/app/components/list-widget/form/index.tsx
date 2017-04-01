@@ -6,6 +6,7 @@ import { IListItem, ListItem } from "../interfaces";
 
 interface IListItemFormProps {
   item?: IListItem;
+  switchMode: Function;
 }
 
 interface IListItemFormState {
@@ -79,5 +80,6 @@ export default class ListItemForm extends React.Component<IListItemFormProps, IL
   private _handleSubmit = (e: any) => {
     e.preventDefault();
     listStore.saveItem(this.state);
+    this.props.switchMode("list");
   }
 }

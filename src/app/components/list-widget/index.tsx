@@ -35,7 +35,7 @@ export default class ListWidget extends React.Component<{}, IListWidgetState> {
   private _renderListWidget = () => {
     return (this.state.mode === "list")
     ? <ItemList items={listStore.list}/>
-    : <ListItemForm />;
+    : <ListItemForm switchMode={this._switchMode}/>;
   }
 
   private _switchMode = (newMode: string) => {
