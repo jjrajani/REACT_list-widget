@@ -9,14 +9,18 @@ export interface Link {
   target?: string;
 };
 
-class Header extends React.Component<{}, {}> {
+interface IHeaderProps {
+  title: string;
+}
+
+class Header extends React.Component<IHeaderProps, {}> {
 
   render() {
     const logo = require("./logo.svg");
     return (
       <div id="header">
         <img src={logo} className="logo" alt="logo" />
-        <h2>React template Pre-packed with...</h2>
+        <h2>{this.props.title}</h2>
         <Nav links={links}/>
       </div>
     );
