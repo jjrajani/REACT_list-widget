@@ -41,4 +41,16 @@ $label-grey: lighten($light-grey, 30%);
       border-radius: 7px;
     }
   }
+  .trash {
+    cursor: pointer;
+    padding: 0.5vh 0.5vw;
+    max-width: 5%;
+    border: solid 1px transparent;
+    &:hover {
+      color: $text-blue;
+      border: solid 1px $text-blue;
+      border-radius: 7px;
+      background: $label-grey;
+    }
+  }
 }

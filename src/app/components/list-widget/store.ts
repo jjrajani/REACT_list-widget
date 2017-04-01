@@ -19,6 +19,12 @@ class ListStore implements IListStore {
   public saveItem = (item: IListItem) => {
     this.list.push(item);
   }
+
+  public trash = (item: IListItem, index: number) => {
+    this.list = this.list.filter((item: IListItem, i: number) => {
+      return i !== index;
+    });
+  }
 }
 
 const listStore = new ListStore();
