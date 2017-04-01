@@ -9,7 +9,11 @@ export default class Home extends React.Component<{}, {}> {
   render() {
     return (
       <div id="home">
-        <h1><a href="https://github.com/jjrajani" target="_blank">humdrum</a></h1>
+        <div className="main-content">
+          <p>
+            To get started, edit <code>src/components/app/index.tsx</code> and save to reload.
+          </p>
+        </div>
       </div>
     );
   }

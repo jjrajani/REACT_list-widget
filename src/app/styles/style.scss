@@ -1,0 +1,12 @@
+@import "base";
+#router-output {
+  // border: solid blue 4px;
+  text-align: center;
+  height: 100vh;
+  .main-content-wrapper {
+    border: solid red 2px;
+    height: 71vh;
+    overflow-x: hidden;
+    overflow-y: scroll;;
+  }
+}

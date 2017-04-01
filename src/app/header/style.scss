@@ -1,10 +1,17 @@
+$base-grey: #222;
+
 #header {
-  background-color: #222;
+  background-color: $base-grey;
   padding: 20px;
   color: white;
+  height: 20vh;
+  // border: solid 2px limegreen;
   .logo {
     animation: logo-spin infinite 20s linear;
     height: 80px;
+  }
+  h2 {
+
   }
 }
 

@@ -1,6 +1,6 @@
 import * as React from "react";
 import "./style.scss";
-import Nav from "../nav";
+import Nav from "../components/nav";
 import links from "./links";
 
 export interface Link {

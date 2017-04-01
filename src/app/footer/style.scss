@@ -1,0 +1,10 @@
+$base-grey: #222;
+
+#footer {
+  // border: solid purple 4px;
+  background: $base-grey;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,4 +1,4 @@
-import { ILink } from "../nav/link";
+import { ILink } from "../components/nav/link";
 
 const links: Array<ILink> = [
   {

@@ -1,0 +1,14 @@
+#home {
+  color: green;
+  .main-content {
+    // border: solid  4px yellow;
+    margin: 2vh 2vw;
+    padding: 2vh 2vw;
+    p {
+      font-size: large;
+      code {
+        color: purple;
+      }
+    }
+  }
+}
