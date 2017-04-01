@@ -3,7 +3,7 @@ import "./style.scss";
 import Nav from "../components/nav";
 import links from "./links";
 
-export interface Link {
+export interface ILink {
   text: string;
   link: string;
   target?: string;

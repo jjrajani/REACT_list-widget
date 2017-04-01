@@ -1,17 +1,16 @@
 import { observable } from "mobx";
+import { IListItem } from "./interfaces";
 
 interface IListStore {
 
 }
 
-interface IListItem {
-  title: string;
-  description: string;
-}
-
 class ListStore implements IListStore {
   @observable public list: Array<IListItem> = new Array<IListItem>();
 
+  // constructor() {
+  //   this.list = [{description: "First ever.", title: "First Ever"}]
+  // }
 }
 
 const listStore = new ListStore();

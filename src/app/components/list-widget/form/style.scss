@@ -1,0 +1,84 @@
+$base-grey: #222;
+$label-text: #8d8d8d;
+$text-blue: #61DAFB;
+$text: #4a4a4a;
+$light-grey: lighten($base-grey, 15%);
+
+#list-widget-form {
+  border: solid 1px $light-grey;
+  overflow: hidden;
+  border-radius: 7px;
+  .title {
+    color: white;
+    padding: 1.25vh 0 1.25vh 5%;
+    text-align: left;
+    background-color: $light-grey;
+  }
+  form {
+    // border: solid yellow 1px;
+    padding: 3vh 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    fieldset {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      margin: 0 5% 3vh;
+      padding: 0;
+      border: none;
+      // border: solid pink 1px;
+      label {
+        // border: solid pink 1px;
+        margin: 0 auto 0.25vh;
+        text-align: left;
+        font-size: 0.8rem;
+        color: $label-text;
+        cursor: pointer;
+      }
+      input {
+        width: 100%;
+        height: 3vh;
+        padding: 0 0 0 2%;
+        margin: 0 auto;
+        outline: none;
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+        font-size: 0.9rem;
+        color: $text;
+      }
+    }
+    button {
+      width: 60%;
+      height: 4vh;
+      border-radius: 7px;
+      border: solid 0px transparent;
+      outline: none;
+      color: $text-blue;
+      font-size: 1rem;
+      letter-spacing: 0.03rem;
+      font-weight: 600;
+      background-color: $light-grey;
+      padding: 0.5vh 0;
+      margin: 4vh 0 0 auto;
+      &:hover {
+        color: $light-grey;
+        background-color: $text-blue;
+        cursor: pointer;
+      }
+    }
+    border: solid green 1px;
+  }
+  p.footer {
+    letter-spacing: 0.03rem;
+    background-color: $light-grey;
+    color: $text-blue;
+    border: none;
+    font-size: 0.7rem;
+    width: 100%;
+    text-align: left;
+    padding: 1vh 0 1vh 1vw;;
+    margin: 0;
+  }
+}
