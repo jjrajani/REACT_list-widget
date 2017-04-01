@@ -33,7 +33,7 @@ export default class ListWidget extends React.Component<{}, IListWidgetState> {
   }
 
   private _renderListWidget = () => {
-    return listStore.length > 0
+    return (this.state.mode === "list")
     ? <ItemList items={listStore.list}/>
     : <ListItemForm />;
   }
