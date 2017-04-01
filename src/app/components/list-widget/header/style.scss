@@ -1,0 +1,33 @@
+$base-grey: #222;
+$label-text: #8d8d8d;
+$text-blue: #61DAFB;
+$text: #4a4a4a;
+$light-grey: lighten($base-grey, 15%);
+
+.list-header {
+  border: none;
+  display: flex;
+  align-items: center;
+  background: $base-grey;
+  padding: 1.5vh;
+  p {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+  button {
+    line-height: 1.3rem;
+    border-radius: 100%;
+    border: solid $text-blue 1px;
+    background-color: $base-grey;
+    color: $text-blue;
+    &.add:after {
+      content: "+";
+      font-size: 1.3rem;
+    }
+    &.back:after {
+      content: "<-";
+      font-size: 1.3rem;
+    }
+  }
+}

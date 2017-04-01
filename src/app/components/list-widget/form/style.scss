@@ -5,12 +5,6 @@ $text: #4a4a4a;
 $light-grey: lighten($base-grey, 15%);
 
 #list-widget-form {
-  .title {
-    color: white;
-    padding: 1.25vh 0 1.25vh 5%;
-    text-align: left;
-    background-color: $light-grey;
-  }
   form {
     // border: solid yellow 1px;
     padding: 3vh 0 0 0;

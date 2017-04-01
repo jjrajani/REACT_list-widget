@@ -33,9 +33,6 @@ export default class ListItemForm extends React.Component<IListItemFormProps, IL
   render() {
     return (
       <div id="list-widget-form">
-        <h3 className="title">
-          {this.props.item ? "Edit List Item" : "New List Item"}
-        </h3>
         <div className="list-form-wrapper">
           <form onSubmit={this._handleSubmit}>
             <fieldset>
