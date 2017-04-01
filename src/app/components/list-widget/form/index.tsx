@@ -1,7 +1,7 @@
 import * as React from "react";
 import "./style.scss";
 import { observer } from "mobx-react";
-// import listFormStore from "./store";
+import listStore from "../store";
 import { IListItem, ListItem } from "../interfaces";
 
 interface IListItemFormProps {
@@ -46,6 +46,7 @@ export default class ListItemForm extends React.Component<IListItemFormProps, IL
                 id="title"
                 value={this.state.title}
                 onChange={this._handleChange}
+                required={true}
               />
             </fieldset>
             <fieldset>
@@ -56,6 +57,7 @@ export default class ListItemForm extends React.Component<IListItemFormProps, IL
                 id="description"
                 value={this.state.description}
                 onChange={this._handleChange}
+                required={true}
               />
             </fieldset>
             <fieldset>
@@ -80,7 +82,6 @@ export default class ListItemForm extends React.Component<IListItemFormProps, IL
 
   private _handleSubmit = (e: any) => {
     e.preventDefault();
-    console.log('submit', e);
-    console.log('item state', this.state)
+    listStore.saveItem(this.state);
   }
 }
