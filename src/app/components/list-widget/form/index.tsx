@@ -67,7 +67,6 @@ export default class ListItemForm extends React.Component<IListItemFormProps, IL
             </fieldset>
           </form>
         </div>
-        <p className="footer">a list widget brought to you by humdrum.</p>
       </div>
     );
   }

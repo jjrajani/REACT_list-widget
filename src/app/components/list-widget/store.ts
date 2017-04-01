@@ -8,10 +8,9 @@ interface IListStore {
 class ListStore implements IListStore {
   @observable public list: Array<IListItem> = new Array<IListItem>();
 
-  // constructor() {
-  //   super(props);
-  //   // this.list = [{description: "First ever.", title: "First Ever"}]
-  // }
+  constructor() {
+    this.list = [{description: "First ever.", title: "First Ever"}]
+  }
 
   @computed get length() {
     return this.list.length;

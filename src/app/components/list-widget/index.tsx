@@ -3,7 +3,7 @@ import { observer } from "mobx-react";
 import "./style.scss";
 import listStore from "./store";
 import ListItemForm from "./form";
-import ItemList from "./itemList";
+import ItemList from "./item-list";
 
 @observer
 export default class ListWidget extends React.Component<{}, {}> {
@@ -19,6 +19,7 @@ export default class ListWidget extends React.Component<{}, {}> {
     return (
       <div id="list-widget">
         {this._renderListWidget()}
+        <p className="footer">a list widget brought to you by humdrum.</p>
       </div>
     );
   }

@@ -1,0 +1,14 @@
+$base-grey: #222;
+$label-text: #8d8d8d;
+$text-blue: #61DAFB;
+$text: #4a4a4a;
+$light-grey: lighten($base-grey, 15%);
+
+#item-list {
+  .title {
+    color: white;
+    padding: 1.25vh 0 1.25vh 5%;
+    text-align: left;
+    background-color: $light-grey;
+  }
+}
