@@ -4,6 +4,7 @@ import { IListItem } from "../interfaces";
 
 interface IListItemProps {
   item: IListItem;
+  index: number;
 }
 
 export default class ListItem extends React.Component<IListItemProps, {}> {
@@ -15,8 +16,11 @@ export default class ListItem extends React.Component<IListItemProps, {}> {
     let item = this.props.item;
     return (
       <div className="list-item">
-        <p className="title">{item.title}</p>
-        <p className="description">{item.description}</p>
+        <h6 className="index">{this.props.index + 1}</h6>
+        <p>
+          <span className="before">{item.title}</span>
+          <span className="content">{item.description}</span>
+        </p>
       </div>
     );
   }

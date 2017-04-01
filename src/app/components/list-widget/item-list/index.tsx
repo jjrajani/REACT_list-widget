@@ -31,7 +31,7 @@ export default class ItemList extends React.Component<IItemListProps, IItemListS
 
   private _renderItems = () => {
     let items: Array<any> = this.props.items.map((item, i) => {
-      return <ListItem item={item} key={i}/>
+      return <ListItem item={item} key={i} index={i}/>
     });
     return <ul>{items}</ul>
   }
