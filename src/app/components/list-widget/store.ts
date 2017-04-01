@@ -9,7 +9,12 @@ class ListStore implements IListStore {
   @observable public list: Array<IListItem> = new Array<IListItem>();
 
   constructor() {
-    this.list = [{description: "First ever.", title: "First Ever"}]
+    this.list = [
+      {
+        title: "First Ever",
+        description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+      }
+    ]
   }
 
   @computed get length() {
