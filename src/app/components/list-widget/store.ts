@@ -1,11 +1,12 @@
-import { observable, computed } from "mobx";
+import { observable, extendObservable } from "mobx";
+// computed
 import { IListItem } from "./interfaces";
 
 interface IListStore {
 
 }
 
-class ListStore implements IListStore {
+export class ListStore implements IListStore {
   @observable public list: Array<IListItem> = new Array<IListItem>();
 
   constructor() {
@@ -15,10 +16,10 @@ class ListStore implements IListStore {
         description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
       }
     ]
-  }
 
-  @computed get length() {
-    return this.list.length;
+    extendObservable(this, {
+      length: () => this.list.length
+    });
   }
 
   public saveItem = (item: IListItem) => {
